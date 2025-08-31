@@ -6,9 +6,10 @@
 4. Jalankan perintah `php artisan key:generate` untuk menghasilkan kunci aplikasi
 5. Jalankan migrasi database dengan perintah `php artisan migrate`
 6. Jalankan seeder dengan perintah `php artisan db:seed`
-7. Jalankan perintah `npm install` untuk menginstal semua dependensi frontend
-8. Jalankan perintah `npm run dev` untuk mengompilasi aset frontend
-9. Setelah semua langkah di atas selesai, Anda dapat menjalankan aplikasi dengan perintah `php artisan serve`
+7. Jalankan Symlink dengan perintah `php artisan storage:link`
+8. Jalankan perintah `npm install` untuk menginstal semua dependensi frontend
+9. Jalankan perintah `npm run dev` untuk mengompilasi aset frontend
+10. Setelah semua langkah di atas selesai, Anda dapat menjalankan aplikasi dengan perintah `php artisan serve`
 
 # Troubleshooting
 
