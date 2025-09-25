@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactManagementController;
 
 
 Route::get('/', function () {
@@ -33,6 +34,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/products/{id}/status', [ProductController::class, 'updateStatus'])
         ->name('products.updateStatus');
 });
+
+Route::resource('/contact-management', ContactManagementController::class);
 
 
 Route::get('/mongo-test', function () {
